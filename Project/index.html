@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus</title>
+
+    <!--Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Colors -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            darkblue: '#0f172a',
+            blueShade: '#152032',
+            lightblue: '#3b82f6',
+            purple: '#a855f7',
+            green: '#22c55e'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+
+<body  class="bg-darkblue text-white">
+
+    <!-- NAVBAR -->
+  <header class="bg-blueShade p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">Nexus</h1>
+
+    <nav class="hidden md:flex gap-6">
+      <a href="#" class="hover:text-lightblue">Home</a>
+      <a href="#" class="hover:text-lightblue">Services</a>
+      <a href="#" class="hover:text-lightblue">About</a>
+      <a href="#" class="hover:text-lightblue">Contact</a>
+    </nav>
+
+    <button class="bg-lightblue px-4 py-2 rounded">Get Started</button>
+  </header>
+
+  <!-- HERO -->
+  <section class="p-6 md:flex items-center justify-between">
+    <div class="md:w-1/2">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        Build Your  <span class="text-lightblue">Digital</span> Future
+      </h1>
+      <p class="mb-6 text-gray-300">
+        Transform your business with cutting-edge solutions that drive growth and innovation in the digital landscape.
+      </p>
+
+      <div class="flex gap-4">
+        <button class="bg-lightblue px-5 py-2 rounded hover:bg-blue-600">
+          Start Your Journey
+        </button>
+        <button class="border px-5 py-2 rounded hover:bg-gray-700">
+          Learn More
+        </button>
+      </div>
+    </div>
+
+    <div class="md:w-1/2 mt-6 md:mt-0">
+      <img src="images/hero.jpg" class="rounded-lg">
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="p-6 text-center">
+    <h2 class="text-3xl font-bold mb-4">Our Services</h2>
+    <p class="text-gray-400 mb-8">
+      We provide comprehensive solutions to help your business thrive in the digital age.
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-blueShade p-6 rounded">
+        <h3 class="text-lightblue text-xl mb-2">Web Development</h3>
+        <p class="text-gray-400">
+          Custom websites and web applications built with modern technologies for optimal performance.
+        </p>
+      </div>
+
+      <div class="bg-blueShade p-6 rounded">
+        <h3 class="text-green text-xl mb-2">Mobile Apps</h3>
+        <p class="text-gray-400">
+          Native and cross-platform mobile applications that deliver exceptional user experiences.
+        </p>
+      </div>
+
+      <div class="bg-blueShade p-6 rounded">
+        <h3 class="text-purple text-xl mb-2">Digital Marketing</h3>
+        <p class="text-gray-400">
+          Strategic marketing campaigns that boost your online presence and drive conversions.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="p-6 md:flex items-center gap-6">
+    <img src="images/about.jpg" class="rounded-lg md:w-1/2">
+
+    <div class="md:w-1/2">
+      <h2 class="text-3xl font-bold mb-4">About Nexus</h2>
+      <p class="text-gray-400 mb-4">
+        We are a forward-thinking technology company dedicated to helping businesses navigate the digital transformation journey. With years of experience and a passion for innovation, we deliver solutions that matter.
+      </p>
+
+      <div class="flex gap-10">
+        <div>
+          <h3 class="text-lightblue text-2xl">150+</h3>
+          <p>Projects Completed</p>
+        </div>
+        <div>
+          <h3 class="text-green text-2xl">98%</h3>
+          <p>Client Satisfaction</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="p-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">Get In Touch</h2>
+    <p class="text-gray-400 mb-6">
+      Ready to start your project? Let's discuss how we can help you achieve your goals.
+    </p>
+
+    <div class="max-w-xl mx-auto bg-blueShade p-6 rounded">
+      <input type="text" placeholder="Your Name"
+        class="w-full p-2 mb-3 rounded bg-gray-700">
+
+      <input type="email" placeholder="Your Email"
+        class="w-full p-2 mb-3 rounded bg-gray-700">
+
+      <textarea placeholder="Your Message"
+        class="w-full p-2 mb-3 rounded bg-gray-700"></textarea>
+
+      <button class="bg-lightblue px-6 py-2 rounded w-full">
+        Send Message
+      </button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-blueShade text-center p-4 mt-6">
+    <p>© 2024 Nexus. All rights reserved.</p>
+  </footer>
+  
+</body>
+</html>
